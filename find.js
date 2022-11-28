@@ -2,7 +2,9 @@
     * Pollyfill for find()
     * Find method is used to get first value in an array that specifies the condition mentioned
 */
+//Test - 1
 console.log("Built in find() : " + [10,12,13,56,18].find(age => age > 18));
+
 Array.prototype.find = null;
 if(!Array.prototype.find){
     Array.prototype.find = function(){
@@ -11,6 +13,7 @@ if(!Array.prototype.find){
                 return this[index];
             }
         }
+        return undefined;
     }
 }
 
