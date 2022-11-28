@@ -1,6 +1,6 @@
 /*
     * Pollyfill for findIndex()
-    * FindIndex method is used to get first index in an array that specifies the condition mentioned.
+    * FindIndex method is used to get first index in an array that matches the condition specified.
 */
 //Test - 1
 console.log("Built in findIndex() : " + [10,12,13,56,18].findIndex(age => age > 18));
